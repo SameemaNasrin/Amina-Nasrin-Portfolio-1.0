@@ -1,0 +1,22 @@
+@media only screen and (max-width: 600px){
+    .bulb{
+        display: none;
+    }
+
+    #introduction{
+        font-size: 2.5vh;
+    }
+
+    #about{
+        font-size: 6vh;
+        left: 3vh;
+    }
+
+    #welcome{
+        font-size: 2vh;
+    }
+
+    .mob-hide{
+        display: none;
+    }
+  }

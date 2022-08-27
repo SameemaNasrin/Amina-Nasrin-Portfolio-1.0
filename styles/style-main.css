@@ -1,0 +1,155 @@
+*{
+    font-family: 'Montserrat';
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --primary-color : #F2F2F2;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.one{
+    border: 2px solid yellow;
+}
+.two{
+    border: 2px solid pink;
+}
+.three{
+    border: 2px solid green;
+}
+.four{
+    border: 2px solid orchid;
+}
+.five{
+    border: 2px solid teal;
+}
+.page{
+    height: 100vh;
+    max-width: 100vw;
+    /* border: 2px solid red; */
+}
+
+.tab-show{
+    display: none;
+}
+
+.negative-space{
+    visibility: hidden;
+}
+
+#bulb-on{
+    position: absolute;
+    max-width: 1vw;
+    left: 51%;
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+#bulb-off{
+    position: absolute;
+    max-width: 1.4vw;
+    z-index: 99;
+    opacity: 1;
+    transition: opacity 0.5s, transform 0.5s;
+    transition-timing-function: ease-in;
+}
+
+
+#bulb-off:hover + #bulb-on{
+    opacity: 1;
+    transform: translateY(-5px);
+}
+
+#bulb-off:hover{
+    opacity: 0;
+    transform: translateY(-5px);
+}
+
+@keyframes bulb-hover{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+#introduction{
+    font-style: normal;
+    font-weight: 100;
+    font-size: 2vw;
+    color: var(--primary-color);
+    letter-spacing: 0.7px;
+    text-align: center;
+}
+
+
+#about{
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 7vw;
+    color: var(--primary-color);
+    margin-top: 1.5vh;
+    left: 15vw;
+    display: inline;
+}
+
+#welcome{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2vw;
+    line-height: 171px;
+    color: #E0E0E0;
+    line-height: 1vw;
+    text-align: center;
+    animation: welcomeSpace 2s infinite;
+}
+
+
+@keyframes welcomeSpace{
+    50%{
+        transform: scale(0.99);
+        opacity: 0.7;
+    }
+}
+
+#introduction, #about, #welcome{
+    position: relative;
+}
+
+.typewrite, .typewrite:hover{
+    text-shadow: 5px 5px 100px #a32c9bde, -5px -5px 100px #a32c9bde;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+
+
+
+.scroll{
+    max-width: 10vh;
+}
+
+.launcher{
+    display: flex; justify-content: center;
+} 
+
+#rocket{
+    position: absolute;
+    top: 16vh;
+    max-width: 3vh;
+    animation: scroll 1s ease-in-out infinite alternate;
+}
+
+@keyframes scroll{
+    0%{
+        top: 16vh;
+    }
+    100%{
+        top: 17vh;
+    }
+}

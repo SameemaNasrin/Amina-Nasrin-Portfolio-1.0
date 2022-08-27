@@ -1,0 +1,49 @@
+#nav-bar{
+    /* visibility: hidden; */
+    display: flex;
+    position: fixed;
+    top: 50px;
+    left: -1.5%;
+}
+
+/* .show-nav{
+    animation: slide-down 00.8s ease-in-out;
+}
+
+@keyframes slide-down{
+    from{
+        top: -40vh;
+    }
+    to{
+        top: 0vh;
+    }
+} */
+
+#profile-pic{
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: 50%;
+    margin-left: 4vw;
+    display: inline;
+    
+}
+
+
+#name{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2vw;
+    color: #E0E0E0;
+    margin-left: 0.5vw;
+}
+
+#designation{
+    position: relative;
+    top: -8px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.5vw;
+    letter-spacing: 0.04em;
+    color: #aaabba;
+    margin-left: 0.5vw;
+}

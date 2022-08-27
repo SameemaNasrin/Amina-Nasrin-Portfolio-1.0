@@ -1,0 +1,134 @@
+#conceptual-design{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.04em;
+    color: #BDBDBD;
+}
+
+#desc-bumble{
+    width: 40vw;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3vw;
+    line-height: 4vw;
+    color: #F2F2F2;
+    text-shadow: 1px 0px 19px rgba(0, 0, 0, 0.4);
+}
+
+
+#page-count{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.6vw;
+    line-height: 20px;
+    /* identical to box height */
+
+    letter-spacing: 0.8rem;
+
+    color: #9192A0;
+}
+
+#bumble-pics > img{
+    position: absolute;
+}
+
+#bumble-base{
+    max-width: 55vw; 
+    z-index: -1; 
+}
+
+#bumble-mobile{
+    max-height: 60vh;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+
+
+#bumble-pic1{
+    position: absolute;
+    left: -100px;
+    top: 65px;
+    max-height: 50vh;
+}
+
+#bumble-pic2{
+    position: absolute;
+    left: 255px;
+    top: 300px;
+    max-height: 10vh;
+}
+
+#bumble-pic3{
+    position: absolute;
+    left: 130px;
+    top: 40px;
+    max-height: 40vh;
+}
+
+#bumble-pic4{
+    position: absolute;
+    left: 50px;
+    top: 120px;
+    max-height: 10vh;
+}
+
+ #bumble-pic1, #bumble-pic2, #bumble-pic3, #bumble-pic4{
+    animation: move 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes move{
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(4px);
+    }
+}
+
+.nav-rocket, .nav-rocket-curr{
+    position: relative;
+    bottom: 30vh;
+}
+
+.nav-rocket:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.projects-container{  /*body*/
+    /* width: 100vw; */
+    /* overflow-x: hidden; */
+}
+
+.projects{ /*slider*/
+    
+    /* position: absolute; */
+    
+    
+}
+
+.project-card{  /*slider span*/
+    transform-style: preserve-3d;
+    /* animation: rotate 30s linear infinite; */
+    transform-origin: center;
+    position: absolute;
+    width: 100vw;
+
+    height: 80vh;
+    /* transform: rotateY(calc(var(--i)* 45deg)) translateZ(350px); */
+
+}
+
+@keyframes rotate{
+    0%{
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100%{
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}

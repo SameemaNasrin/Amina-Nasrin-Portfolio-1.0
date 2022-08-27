@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    
+}
+
+.container-fluid{
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+.page{
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.half-page-one{
+    height: 45vh;
+    overflow-x: hidden;
+}
+
+.half-page-two{
+    height: 55vh;
+    overflow-x: hidden;
+}
+
+.two-page{
+    height: 200vh;
+    overflow-x: hidden;
+}
+
+.half-page-parallax{   
+    height: 80vh;
+    overflow-x: hidden;
+}
+
+#top{
+    background-image: url("images/Frame 6923.jpg");
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.left-space{
+    position: relative;
+    left: 2.2vw;
+}
+
+#text1{
+    font-weight: 600;
+    color: #F2F2F2;
+    font-size: 6vh;
+    line-height: 4vw;
+    width: 550px;
+    
+}
+
+#text2{
+    margin: 0;
+    font-weight: 400;
+    color: #F2F2F2;
+    font-size: 2vh;
+    position: relative;
+    width: 550px;
+}
+
+#text3{
+    margin: 0;
+    font-weight: 400;
+    color: #F2F2F2;
+    font-size: 1.8vh;
+    position: relative;
+    width: 550px;
+}
+
+.negative-space{
+    visibility: hidden;
+}
+
+#hr{
+    height: 1px;
+    width: 550px;
+    background-image: linear-gradient(to right, #F0F0F0, #04789C);
+    position: relative;
+    opacity: 0.7;
+    
+}
+
+#mobile{
+    max-height: 90vh;
+    position: absolute;
+}
+
+#cart{
+    position: absolute;
+    top: 50vh;
+    left: -10px;
+    max-height: 20vh;
+}
+
+#shoe{
+    position: absolute;
+    top: 10vh;
+    left:20px;
+    max-height: 20vh;
+}
+
+#lens{
+    position: absolute;
+    top: 57vh;
+    left:23vw;
+    max-height: 15vh;
+    /* filter: blur(1px); */
+}
+
+#cart-shoe{
+    position: absolute;
+    top: 15vh;
+    left:21vw;
+    max-height: 35vh;
+    /* filter: blur(1px); */
+}
+
+#air{
+    position: absolute;
+    top: 11.2vh;
+    left:25vw;
+    max-height: 20vh;
+    /* filter: blur(1px); */
+}
+
+
+#ellipse{
+    position: absolute;
+    top: 85vh;
+    left:5vw;
+    max-height: 20vh;
+    /* filter: blur(1px); */
+}
+
+
+
+#cart, #shoe, #lens, #cart-shoe, #air{
+    animation: move 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes move{
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(4px);
+    }
+}
+
+
+#text4{
+    margin: 0;
+    color: #403F49;
+    font-size: 1.8vh;
+    position: relative;
+    width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #F2F2F2;
+    padding: 10px;
+    font-style: italic;
+    border-left: 5px solid #04789C;
+    border-right: 5px solid #04789C;
+}
+
+.desc{
+    background-color: #01151C;
+}
+
+td, th{
+    width: 8vw;
+    padding: 2px;
+}
+
+table{
+    margin-left: 36vw;
+}
+
+th{
+    font-size: 0.8vw;
+}
+
+td{
+    font-size: 0.6vw;
+    color: #059BC9;
+}
+
+#toesmith-desc{
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 4vw;
+    text-align: center;   
+}
+
+#toesmith-cust{
+    color: #BDBDBD;
+    font-size: 1vw;
+    width: 32vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 30px;
+}
+
+#toesmith-resn{
+    color: #BDBDBD;
+    font-size: 1vw;
+    width: 35vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 30px;
+}
+
+#toesmith-fashion{
+    color: #578390;
+    width: 31vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 20px;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("images/parallax.png");
+
+  /* Set a specific height */
+  min-height: 800px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow-x: hidden;
+}
+
+.topic{
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.topic h1{
+    font-weight: bolder;
+}
+
+.subtopic h3{
+    font-weight: bold;
+}
+
+.description li{
+    line-height: 5vh;
+}
+
+hr{
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#projectStages{
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+#projectStages td{
+    color: #77768C;
+    width: 2vw;
+    padding: 1vw 3vw; 
+}
+
+#projectStages td h6{
+    font-weight: 600;
+    color: #2F2E34;
+}
+
+#projectStages td p, #skip-to-visual{
+    font-size: 1.2rem;
+}
+
+.box{
+    height: 2vh;
+    width: 2vh;
+    border-radius: 4px;
+}
+
+.box-one{
+    background-color: #059BC9;
+}
+
+.box-two{
+    background-color: #05C9C9;
+}
+
+.box-three{
+    background-color: #059BC9;
+}
+
+.box-four{
+    background-color: #05C9C9;
+}
+
+.box-five{
+    background-color: #059BC9;
+}
+
+.box-six{
+    background-color: #05C9C9;
+}
+
+.box-seven{
+    background-color: #059BC9;
+}
+
+.box-eight{
+    background-color: #05C9C9;
+}
+
+#skip-to-visual{
+    background-color: #05A3D4;
+    color: #FFFFFF;
+    border: none;
+    padding: 2vh 2vw;
+    border-radius: 4vw;
+}
+
+.site-analysis{
+    width: 50vw;
+    margin-left: 50vw;
+}

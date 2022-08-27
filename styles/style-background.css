@@ -1,0 +1,99 @@
+#background{
+    background-image: url("/images/Background/Noise/Noise10.svg");
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+#background img{
+    opacity: 0.5;
+}
+
+#saturn{
+    position: fixed;
+    top: 40%;
+    left: 4%;
+    animation: moveSaturn 4s infinite linear alternate-reverse;
+}
+
+#meteor1{
+    position: fixed;
+    top: 40%;
+    left: -10%;
+    animation: moveMeteor1 2s infinite;
+}
+
+#meteor2{
+    position: fixed;
+    top: 5%;
+    left: 70%;
+    animation: moveMeteor2 2s infinite;
+}
+
+#stars{
+    animation: moveStar 250s infinite linear;
+}
+
+#shooting-star{
+    position: fixed;
+    top: 80vh;
+    left: 20vw;
+    animation: shootingStar 2s infinite;
+}
+
+@keyframes moveStar{
+    0%{
+        transform: rotate(0deg) translateX(100px);
+        transform-origin: center;
+    }
+    100%{
+        transform: rotate(360deg) translateX(100px);
+        transform-origin: center;
+    }
+
+}
+
+@keyframes moveSaturn{
+    0%{
+        transform: translate(0px, 0px);
+        transform-origin: center;
+    }
+    100%{
+        transform: translate(-20px, 20px);
+        transform-origin: center;
+    }
+}
+
+@keyframes moveMeteor1{
+    0%{
+        transform: translateX(0) translateY(0);
+        transform-origin: center;
+    }
+    100%{
+        transform: translateX(90vw) translateY(90vh);
+        transform-origin: center;
+    }
+}
+
+@keyframes moveMeteor2{
+    0%{
+        transform: translateX(0) translateY(0);
+        transform-origin: center;
+    }
+    100%{
+        transform: translateX(-90vw) translateY(90vh);
+        transform-origin: center;
+    }
+}
+
+@keyframes shootingStar{
+    50%{
+        transform: scale(1.15);
+        opacity: 0.6;
+    }
+}
