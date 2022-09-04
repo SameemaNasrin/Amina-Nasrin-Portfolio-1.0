@@ -1,4 +1,4 @@
-#conceptual-design{
+#project-name{
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
@@ -8,7 +8,7 @@
     color: #BDBDBD;
 }
 
-#desc-bumble{
+#project-desc{
     width: 40vw;
     font-family: Montserrat;
     font-style: normal;
@@ -19,8 +19,12 @@
     text-shadow: 1px 0px 19px rgba(0, 0, 0, 0.4);
 }
 
+.container-fluid{
+    height: 200vh;
+    overflow: hidden;
+}
 
-#page-count{
+#project-no{
     font-style: normal;
     font-weight: 600;
     font-size: 0.6vw;
@@ -32,16 +36,16 @@
     color: #9192A0;
 }
 
-#bumble-pics > img{
+#pics > img{
     position: absolute;
 }
 
-#bumble-base{
+#base-image{
     max-width: 55vw; 
     z-index: -1; 
 }
 
-#bumble-mobile{
+#background-image{
     max-height: 60vh;
     position: absolute;
     left: 50px;
@@ -49,35 +53,43 @@
 }
 
 
-#bumble-pic1{
+#pic1{
     position: absolute;
     left: -100px;
     top: 65px;
     max-height: 50vh;
 }
 
-#bumble-pic2{
+#pic2{
     position: absolute;
     left: 255px;
     top: 300px;
     max-height: 10vh;
 }
 
-#bumble-pic3{
+#pic3{
     position: absolute;
     left: 130px;
     top: 40px;
     max-height: 40vh;
 }
 
-#bumble-pic4{
+#pic4{
     position: absolute;
     left: 50px;
     top: 120px;
     max-height: 10vh;
 }
 
- #bumble-pic1, #bumble-pic2, #bumble-pic3, #bumble-pic4{
+#pic5{
+    position: absolute;
+    right: 30px;
+    top: 140px;
+    max-height: 10vh;
+    visibility: hidden;
+}
+
+ #pic1, #pic2, #pic3, #pic4, #pic5{
     animation: move 1.5s ease-in-out infinite alternate;
 }
 
@@ -92,7 +104,7 @@
 
 .nav-rocket, .nav-rocket-curr{
     position: relative;
-    bottom: 30vh;
+    bottom: 10vh;
 }
 
 .nav-rocket:hover{
@@ -100,7 +112,9 @@
     cursor: pointer;
 }
 
-.projects-container{  /*body*/
+.projects-container{ 
+    
+     /*body*/
     /* width: 100vw; */
     /* overflow-x: hidden; */
 }
